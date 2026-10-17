@@ -13,7 +13,7 @@ Kỹ năng này giúp Claude tự động tạo các video ngắn 50–60 giây 
 1. **Visual Engine**: Remotion + TailwindCSS + Spring Physics (`spring()`) + Clamping Interpolations.
 2. **AI Voiceover**: Chọn provider qua `TTS_PROVIDER` trong `.env`:
    - `edge`: `edge-tts-universal` (online, miễn phí, không cần API key) - xuất `.mp3`.
-   - `cit`: **CIT Voice Studio** (offline, giọng tiếng Việt chất lượng phòng thu) - xuất `.wav`/`.mp3`. Tải app tại [github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio), tài liệu API: `docs/cit-voice-studio.md`.
+   - `cit`: **CIT Voice Studio** (offline, giọng tiếng Việt chất lượng phòng thu) - xuất `.wav`/`.mp3`. Tải app tại [github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio), tài liệu API: `docs/cit-voice-studio.md`.
 3. **Đồng bộ Thời lượng Frame-Accurate**: Script tự động đo độ dài audio (MP3/WAV) và tính toán số frame chính xác (`durationInFrames`) cho từng phân cảnh.
 4. **Bố cục Chuẩn Mobile**:
    - **Thương hiệu kênh**: Huy hiệu `⚡ [CHANNEL_NAME]` ở đỉnh giữa (`top: 150px`), tránh thanh tìm kiếm của TikTok/Shorts.
@@ -43,7 +43,7 @@ CHANNEL_NAME="mquyen"
 ```
 
 **Khi `TTS_PROVIDER=cit`**:
-- App CIT Voice Studio phải đang mở. Script tự gọi `GET /health` trước khi sinh audio; nếu báo không kết nối được, nhắc người dùng mở app (hoặc tải tại [github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio)).
+- App CIT Voice Studio phải đang mở. Script tự gọi `GET /health` trước khi sinh audio; nếu báo không kết nối được, nhắc người dùng mở app (hoặc tải tại [github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio)).
 - Lời thoại có thể chèn thẻ cảm xúc `[cười]`, `[thở dài]`, `[hắng giọng]` và thẻ nghỉ `[nghỉ 0.5s]` (không bị đọc thành tiếng). Không lạm dụng: tối đa 1 thẻ/cảnh.
 - Lỗi `400 Voice not found` = sai tên giọng (phân biệt dấu). Kiểm tra `CIT_TTS_VOICE`.
 

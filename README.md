@@ -113,7 +113,7 @@ npm run tts -- --text "Xin chào các bạn, hôm nay chúng ta cùng tìm hiể
 
 Muốn dùng giọng tiếng Việt của **CIT Voice Studio** (25+ giọng, chạy offline trên máy):
 
-1. Tải ứng dụng và đọc hướng dẫn cài đặt tại: **[github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio)**
+1. Tải ứng dụng và đọc hướng dẫn cài đặt tại: **[github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio)**
 2. Mở ứng dụng (API mặc định chạy tại `http://127.0.0.1:8001`).
 3. Đặt trong `.env`:
    ```env

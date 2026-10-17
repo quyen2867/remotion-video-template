@@ -10,7 +10,7 @@ This skill guides you in creating high-quality, 50–60 second short-form explai
 
 It combines:
 1. **Visual Best Practices** from `remotion-dev/skills` (frame-accurate springs, clamping interpolations, sequence composition, typography hierarchy).
-2. **AI Voiceover Synthesis** via `TTS_PROVIDER` in `.env`: `edge` (`edge-tts-universal`, online, free) or `cit` (**CIT Voice Studio**, offline Vietnamese studio voices - download at [github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio), API docs: `docs/cit-voice-studio.md`).
+2. **AI Voiceover Synthesis** via `TTS_PROVIDER` in `.env`: `edge` (`edge-tts-universal`, online, free) or `cit` (**CIT Voice Studio**, offline Vietnamese studio voices - download at [github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio), API docs: `docs/cit-voice-studio.md`).
 3. **Exact Timing Synchronization** mapping audio voiceover lengths directly into Remotion frame sequences.
 
 ---
@@ -51,7 +51,7 @@ CIT_TTS_SPEED=1.1                    # 0.5 - 2.0
 ```
 
 **Khi `TTS_PROVIDER=cit`**:
-- App CIT Voice Studio phải đang mở. Script tự gọi `GET /health` trước khi sinh audio; nếu báo không kết nối được, nhắc người dùng mở app (hoặc tải tại [github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio)).
+- App CIT Voice Studio phải đang mở. Script tự gọi `GET /health` trước khi sinh audio; nếu báo không kết nối được, nhắc người dùng mở app (hoặc tải tại [github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio)).
 - Lời thoại có thể chèn thẻ cảm xúc `[cười]`, `[thở dài]`, `[hắng giọng]` và thẻ nghỉ `[nghỉ 0.5s]` (không bị đọc thành tiếng). Không lạm dụng: tối đa 1 thẻ/cảnh.
 - Lỗi `400 Voice not found` = sai tên giọng (phân biệt dấu). Kiểm tra `CIT_TTS_VOICE`.
 

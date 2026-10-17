@@ -111,7 +111,7 @@ npm run tts -- --text "Hello everyone, today we explore how Docker works." publi
 
 To use **CIT Voice Studio** Vietnamese voices (25+ voices, running offline on your machine):
 
-1. Download the app and read the setup guide at: **[github.com/Cuongyd196/cit-voice-studio](https://github.com/Cuongyd196/cit-voice-studio)**
+1. Download the app and read the setup guide at: **[github.com/quyen2867/cit-voice-studio](https://github.com/quyen2867/cit-voice-studio)**
 2. Open the app (API runs at `http://127.0.0.1:8001` by default).
 3. Set in `.env`:
    ```env
