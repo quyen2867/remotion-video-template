@@ -6,8 +6,7 @@
     "type": "git",
     "url": "https://github.com/quyen2867/remotion-video-template.git"
   },
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@remotion/cli": "4.0.407",
     "@remotion/tailwind-v4": "4.0.407",
